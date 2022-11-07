@@ -1,17 +1,17 @@
 import { Box, Button, TextField } from '@mui/material'
 import React from 'react'
-import { Checkboxes } from './checkbox';
-import Dropdown from './dropdown';
+import { Checkboxes } from '../Component/checkbox';
+import Dropdown from '../Component/dropdown';
 function Courseform() {
   return (
     <>
-    <h1 style={{color:'darkcyan',textAlign:'center'}}>Welcome to the Course Form </h1>
+    <h1 style={{color:'darkcyan',textAlign:'center',backgroundColor:'darkgrey'}}>Welcome to the Course Form </h1>
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 3, width: '25ch' },
+        '& .MuiTextField-root': { m: 3, width: '25ch' ,backgroundColor:'cyan'},
       }}
-      noValidate
+      novalidate
       autoComplete="off"
       >
     <TextField style={{marginRight:'60px',width:"43%"}}

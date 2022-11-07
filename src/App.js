@@ -1,12 +1,13 @@
-import React from 'react'
-import Form from './Component/form';
-import AppRouter from './config/router';
+import React from "react";
+import Form from "./screen/form";
+import AppRouter from "./Routes/router";
+import "./style.css";
 const App = () => {
   return (
     <>
-     <AppRouter/>
+      <AppRouter />
     </>
-  )
-}
+  );
+};
 
 export default App;
