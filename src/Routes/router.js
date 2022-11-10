@@ -19,7 +19,7 @@ function AppRouter() {
             <Route path='login' element = {<Login/>} />
             <Route path='signup' element = {<Signup/>}/>
             <Route path='form' element= {<Form/>}/>
-            <Route path='coursefor' element={<Courseform/>}/>
+            <Route path='courseform' element={<Courseform/>}/>
             <Route path='logout' element={<LogoutModal/>}/>
         </Routes>
     </Router>

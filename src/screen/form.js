@@ -1,4 +1,4 @@
-import { Box, Grid, Select } from "@mui/material";
+import { Box, Divider, Grid, Select } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import FormSubmit from "../Component/button";
@@ -9,9 +9,9 @@ import { setDate } from "../core/helpermethod";
 
 function Form() {
   const [models, setModels] = useState({});
-  let register = () => {
-    models.registrationDate = setDate(new Date());
-    console.log(models);
+  const d2 = () => {
+    new Date("Nov 11,22 10:03:20").getFullYear();
+    console.log(d2);
   };
   return (
     <>
@@ -30,7 +30,7 @@ function Form() {
               <Grid item md={6}>
                 <Input label="lastname" />
               </Grid>
-              <Grid item md={3}>
+              <Grid item md={2}>
                 <SelectButton
                   label="Course"
                   datasource={[
@@ -49,7 +49,7 @@ function Form() {
                   ]}
                 />
               </Grid>
-              <Grid item md={3}>
+              <Grid item md={8}>
                 <SelectButton
                   label="section"
                   datasource={[
@@ -61,14 +61,26 @@ function Form() {
                   ]}
                 />
               </Grid>
-              <Input label="Contact" />
-              <Input label="Cnic" />
-              <Input label="FatherName" />
-              <Input label="FatherCnic" />
-              <Input label="Father Contact" />
-              <Input label="Emergency Contact" />
-              <Input label="Date Of Birth" />
-              <Grid md={4}>
+
+              <Grid item md={6}>
+                <Input label="Contact" />
+              </Grid>
+              <Grid item md={6}>
+                <Input label="Cnic" />
+              </Grid>
+              <Grid item md={6}>
+                <Input label="FatherName" />
+              </Grid>
+              <Grid item md={6}>
+                <Input label="FatherCnic" />
+              </Grid>
+              <Grid item md={6}>
+                <Input label="Father Contact" />
+              </Grid>
+              <Grid item md={6}>
+                <Input label="Emergency Contact" />
+              </Grid>
+              <Grid md={6}>
                 <SelectButton
                   label="Age"
                   datasource={[
@@ -92,7 +104,7 @@ function Form() {
                 />
               </Grid>
               <Grid item md={12}>
-                <FormSubmit label="submit" onClick={register} />
+                <FormSubmit label="submit" onClick={d2} />
               </Grid>
             </Grid>
           </Box>
